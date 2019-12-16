@@ -1,0 +1,5 @@
+---
+name: default
+title: Docker Engine - Community installation
+summary: Test suite for basic check of Docker Engine - Community installation
+version: 0.1.0

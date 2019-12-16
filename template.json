@@ -1,0 +1,32 @@
+{
+    "variables": {
+      "build_name": "ubuntu-1804-docker",
+      "base_box": "slavrd/bionic64",
+      "skip_add": "true"
+    },
+    "builders": [
+      {
+          "name": "{{user `build_name`}}",
+          "communicator": "ssh",
+          "source_path": "{{user `base_box`}}",
+          "box_name": "{{user `base_box`}}",
+          "provider": "virtualbox",
+          "add_force": true,
+          "skip_add": "{{user `skip_add`}}",
+          "type": "vagrant"
+      }
+    ],
+    "provisioners": [
+      {
+        "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash {{.Path}}",
+        "scripts": [
+          "scripts/provision.sh",
+          "scripts/cleanup.sh"
+        ],
+        "environment_vars": [
+          "DEBIAN_FRONTEND=noninteractive"
+        ],
+        "type": "shell"
+      }
+    ]
+  }

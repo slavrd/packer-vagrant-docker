@@ -6,3 +6,10 @@ crash.log
 
 # For built boxes
 *.box
+output-*
+
+.ruby-version
+
+Gemfile.lock
+
+.kitchen/
