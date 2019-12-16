@@ -40,7 +40,7 @@ The project includes a KitchenCI configuration which can be used to run `inspec`
 
 Tests are run after Packer successfully generated the Vagrant box. 
 
-Make sure that box with name `remove ubuntu-docker-virtualbox-test` is not already added to vagrant. Run `vagrant box list` to view added boxes. If this box exists run the last, optional command to remove it.
+Make sure that box with name `ubuntu-docker-virtualbox-test` is not already added to vagrant. Run `vagrant box list` to view added boxes. If this box exists run the last, optional command to remove it.
 
 * `bundle exec kitchen converge` - will add the generated box to Vagrant and will start the VM.
 * `bundle exec kitchen verify` - will run the `inspec` tests in the VM.
