@@ -13,6 +13,7 @@ A Packer project that builds a basic Vagrant box for VirtualBox provider with Do
 1. Set Packer template variables. Available variables are:
    * `base_box` - the base box to use. It should be a Vagrant box with Ubuntu OS installed on it. Default: `slavrd/bionic64`.
    * `skip_add` - if the base box should be added to Vagrant. Set to `true` to avoid Vagrant re-adding (re-downloading) the base box. Default: `true`.
+   * `docker_version_string` - the version string to use to install a specific version of Docker CE. Can be seen by running `sudo apt-cache madison docker-ce`.
    * `build_name` - The name of the packer build. Should not be touched unless you have a specific reason. Default: `ubuntu-1804-docker`.
 
     Help on setting Packer variables can be found [here](https://www.packer.io/docs/templates/user-variables.html#setting-variables).

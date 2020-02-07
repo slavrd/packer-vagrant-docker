@@ -19,4 +19,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 # install the latest version of the Docker Engine - Comunity
 sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+[ -z "$DOCKER_VERSION_STRING" ] \
+&& sudo apt-get install -y docker-ce docker-ce-cli containerd.io \
+|| sudo apt-get install -y docker-ce=${DOCKER_VERSION_STRING} docker-ce-cli=${DOCKER_VERSION_STRING} containerd.io
