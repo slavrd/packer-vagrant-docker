@@ -2,7 +2,8 @@
     "variables": {
       "build_name": "ubuntu-1804-docker",
       "base_box": "slavrd/bionic64",
-      "skip_add": "true"
+      "skip_add": "true",
+      "docker_version_string": ""
     },
     "builders": [
       {
@@ -24,7 +25,8 @@
           "scripts/cleanup.sh"
         ],
         "environment_vars": [
-          "DEBIAN_FRONTEND=noninteractive"
+          "DEBIAN_FRONTEND=noninteractive",
+          "DOCKER_VERSION_STRING={{user `docker_version_string`}}"
         ],
         "type": "shell"
       }
