@@ -23,3 +23,6 @@ sudo apt-get update
 [ -z "$DOCKER_VERSION_STRING" ] \
 && sudo apt-get install -y docker-ce docker-ce-cli containerd.io \
 || sudo apt-get install -y docker-ce=${DOCKER_VERSION_STRING} docker-ce-cli=${DOCKER_VERSION_STRING} containerd.io
+
+# add vagrant user to docker group
+sudo usermod -G docker vagrant
