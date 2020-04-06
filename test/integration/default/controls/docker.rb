@@ -13,4 +13,8 @@ control 'docker' do
     its('stdout') { should match /.*This message shows that your installation appears to be working correctly\..*/ }
   end
 
+  describe user('vagrant') do
+    its('groups') { should include 'docker' }
+  end
+
 end
