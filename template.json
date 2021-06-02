@@ -1,9 +1,9 @@
 {
     "variables": {
       "build_name": "ubuntu-docker",
-      "base_box": "slavrd/bionic64",
+      "base_box": "ubuntu/focal64",
       "skip_add": "true",
-      "docker_version_string": ""
+      "docker_version_string": "5:20.10.6~3-0~ubuntu-focal"
     },
     "builders": [
       {

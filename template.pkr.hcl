@@ -1,6 +1,6 @@
 variable "base_box" {
   type    = string
-  default = "slavrd/bionic64"
+  default = "ubuntu/focal64"
 }
 
 variable "skip_add" {
@@ -10,7 +10,7 @@ variable "skip_add" {
 
 variable "docker_version_string" {
   type    = string
-  default = ""
+  default = "5:20.10.6~3-0~ubuntu-focal"
 }
 
 source "vagrant" "ubuntu-docker" {
