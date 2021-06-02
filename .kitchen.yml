@@ -9,7 +9,7 @@ platforms:
   - name: ubuntu-docker-virtualbox
     driver:
       box: ubuntu-docker-virtualbox-test
-      box_url: file:///<%= ENV['PWD'] %>/output-ubuntu-1804-docker/package.box
+      box_url: file:///<%= ENV['PWD'] %>/output-ubuntu-docker/package.box
       provider: virtualbox
 
 verifier:

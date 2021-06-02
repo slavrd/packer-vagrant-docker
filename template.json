@@ -1,6 +1,6 @@
 {
     "variables": {
-      "build_name": "ubuntu-1804-docker",
+      "build_name": "ubuntu-docker",
       "base_box": "slavrd/bionic64",
       "skip_add": "true",
       "docker_version_string": ""
