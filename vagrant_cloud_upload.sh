@@ -3,7 +3,7 @@
 # Uploads a virtualbox box package to vagrant cloud and releases it.
 # Usage: <vc_box> [vc_box_ver]
 
-BOX_PATH="output-ubuntu-1804-docker/package.box"
+BOX_PATH="output-ubuntu-docker/package.box"
 BOX_DESC="An Ubuntu box with Docker Engine - Community installed."
 
 # check prerequsites - passed parameters and vagrant installation
