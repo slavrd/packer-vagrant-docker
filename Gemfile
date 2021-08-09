@@ -1,6 +1,6 @@
-ruby '~> 2.6.5'
+ruby '~> 3.0.2'
 
 source 'https://rubygems.org/' do
-  gem 'kitchen-vagrant' , '~> 1.6'
-  gem 'kitchen-inspec' , '~> 1.2'
+  gem 'kitchen-vagrant'
+  gem 'kitchen-inspec'
 end
