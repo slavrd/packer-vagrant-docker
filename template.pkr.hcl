@@ -10,7 +10,7 @@ variable "skip_add" {
 
 variable "docker_version_string" {
   type    = string
-  default = "5:20.10.6~3-0~ubuntu-focal"
+  default = "5:20.10.8~3-0~ubuntu-focal"
 }
 
 source "vagrant" "ubuntu-docker" {
