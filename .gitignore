@@ -10,6 +10,4 @@ output-*
 
 .ruby-version
 
-Gemfile.lock
-
 .kitchen/
